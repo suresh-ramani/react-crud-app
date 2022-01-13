@@ -19,7 +19,7 @@ export default function EditUser() {
 
   useEffect(()=>{
     fetchProduct()
-  },[])
+  })
 
   const fetchProduct = async () => {
     await axios.get(`http://localhost:8000/api/products/${id}`).then(({data})=>{
